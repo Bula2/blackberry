@@ -99,7 +99,7 @@ body {
 }
 
 .layers__caption {
-    font-size: calc(var(--index) / 1.075);
+    font-size: calc(var(--index) * 1.2);
     letter-spacing: calc(var(--index) / 3.5);
     margin-top: calc(var(--index) * -0.65);
 }
@@ -133,6 +133,34 @@ body {
     transition: var(--transition);
     will-change: transform;
 }
+
+.main-article__link{
+    max-width:  calc(var(--index) * 30);
+    font-size: calc(var(--index) * .9);
+    margin-top: calc(var(--index) / 1.25);
+    transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+    transition: var(--transition);
+    will-change: transform;
+}
+
+.link{
+    text-decoration: none;
+    color: #fa5055;
+}
+
+.link > img{
+    width: 150px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 20%;
+    padding: 20px 20px 20px 10px;
+    box-shadow: 0 0 15px #9e7d35;
+    transition: box-shadow .8s ease;
+}
+
+.link > img:hover{
+    box-shadow: 0 0 60px 30px #9e7d35;
+}
+
 
 .copy {
     position: absolute;
