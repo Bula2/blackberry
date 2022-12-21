@@ -94,14 +94,15 @@ body {
 }
 
 .layers__title {
-    font-size: calc(var(--index) * 2.2);
-    letter-spacing: calc(var(--index) / 2.25);
+    font-size: calc(var(--index) * 1.4);
+    letter-spacing: calc(var(--index) / 4);
+    margin-top: calc(var(--index) * -1.2);
 }
 
 .layers__caption {
     font-size: calc(var(--index) * 1.2);
     letter-spacing: calc(var(--index) / 3.5);
-    margin-top: calc(var(--index) * -0.65);
+    margin-top: calc(var(--index) * -1.2);
 }
 
 .main-article {
